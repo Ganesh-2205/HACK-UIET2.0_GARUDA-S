@@ -1,3 +1,6 @@
+// buyer js file login purpose
+
+
 let wrapper = document.querySelector('.wrapper'),
     signUpLink = document.querySelector('.link .signup-link'),
     signInLink = document.querySelector('.link .signin-link');

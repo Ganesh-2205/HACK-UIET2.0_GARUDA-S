@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/DakGhar2023-main/Registration(Vendor)/style3.css">  
+    <title>Registration(Buyer)</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-container sign-up">
+            <form id="form_id" method="post" name="myform">
+                <img class="image" src="../Registration(buyer)/Screenshot 2023-09-20 224145.png" alt="stylesheet">
+                <h2>Registration</h2>
+                <div class="form-group">
+                    <input type="text" required>
+                    <label for="">username</label>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" required>
+                    <label for="">email</label>
+                    <i class="fas fa-at"></i>
+                </div>
+                <div class="form-group">
+                    <input type="tel" required>
+                    <label for="">Contact no.</label>
+                    <i class="fas fa-mobile"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" required>
+                    <label for="">password</label>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" required>
+                    <label for="">confirm password</label>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="Registration-Button">
+                    <input type="button" value="Registration" id="submit" onclick="dataTosend()"/>
+                    </div>
+                    <p>You already have an account?<a href="#" class="signin-link"> sign in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+    <script>
+         const dataTosend=async()=>{
+        var username= document.getElementById("username").value;
+        var password= document.getElementById("password").value;
+        var mobile= document.getElementById("mobile").value;
+        var email= document.getElementById("email").value;
+       
+       
+        fetch('http://localhost:8080/vend/register',{
+            method: 'POST',
+       
+       headers: {
+       
+       'Content-Type': 'application/json'
+       
+       },
+       body: JSON.stringify({
+       
+       "user": username,
+       
+       'password': password,
+       
+       'email': email, 'mobile': mobile
+       
+       }),
+       
+       })
+       
+       .then(Response => { 
+           console.log(Response);
+       
+       }).catch(error => { 
+           console.log(error);
+       })
+        }
+    </script>
+</body>
+</html>

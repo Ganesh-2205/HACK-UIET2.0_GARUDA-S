@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../login page(Buyer)/newStyle.css">  
+    <title>Signin & Sign up(Vendor)</title>
+</head>
+<body>
+   
+
+    <div class="wrapper">
+        <!-- <div class="form-container sign-up">
+            <form action="#">
+                <h2>sign up</h2>
+                <div class="form-group">
+                    <input type="text" required>
+                    <label for="">username</label>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" required>
+                    <label for="">email</label>
+                    <i class="fas fa-at"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" required>
+                    <label for="">password</label>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" required>
+                    <label for="">confirm password</label>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <button type="submit" class="btn">sign up</button>
+                <div class="link">
+                    <p>You already have an account?<a href="#" class="signin-link"> sign in</a></p>
+                </div>
+            </form>
+        </div> -->
+     
+
+        <div class="form-container sign-in">
+        
+            <form id="for_id" method="post" name="myform">
+                <img class="image" src="../login page(buyer)/Screenshot 2023-09-20 224145.png" alt="stylesheet">
+                <h2>login</h2>
+                <div class="form-group">
+                    <input type="text" id="username" required>
+                    <i class="fas fa-user"></i>
+                    <label for="">username</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" required>
+                    <i class="fas fa-lock"></i>
+                    <label for="">password</label>
+                </div>
+                <!-- <div class="form-group">
+                    <input type="number" required>
+                    <i class="fas fa-square"></i>
+                    <label for="">Shop-ID</label>
+                </div> -->
+                <div class="forgot-pass">
+                    <a href="#">forgot password?</a>
+                </div>
+                <button type="submit" class="btn">login</button>
+                <div class="link">
+                    <p>Don't have an account?<a href="/DakGhar2023-main/Registration(Vendor)/index3.html"> register now</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+    <script src="../login page(Vendor)/newjava.js">
+         const dataTosend = async () => {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+
+            fetch('http://localhost:8080/auth/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    "user": username,
+                    'password': password
+                
+                }),
+
+            })
+            .then(Response => {
+                var varsity=Response.ok;
+                console.log(Response);
+              
+                if(varsity)
+                window.location.href = "http://www.w3schools.com";
+                else
+                window.alert("invalid input");
+            }).catch(error => {
+                console.log(error);
+            })
+        }
+    </script>
+</body>
+</html>

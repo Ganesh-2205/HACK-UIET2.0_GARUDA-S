@@ -1,0 +1,177 @@
+body{
+    margin:0px;
+}
+.signIn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-indent: 0rem;
+    text-decoration:none;
+    padding:0rem;
+}
+
+.signIn h3:hover{
+    text-decoration:none;
+    border-radius:9px;
+    background-color:#E7C0E0;
+
+}
+.signIn h3{
+    text-size:10px;
+    cursor: pointer;
+    text-decoration:none;
+}
+.signIn a{
+    text-decoration:none;
+    color:black;
+    font-family: sans-serif;
+    font-weight:large;
+
+}
+.signIn h4:hover{
+    transition: .3s linear;
+    border-radius:8px;
+    cursor: pointer;
+
+}
+.signIn h4{
+    transition: .3s linear;
+    text-size:9px;
+    margin-left:10px;
+    text-decoration:none;
+}
+.signIn img{
+    height:30px;
+    width:30px;
+}
+.Seller{
+    margin-left: 845px;
+}
+.Seller img:hover{
+    font-size: bold;
+    text-decoration:none;
+}
+.signIn1{
+    display: flex;
+    flex-direction: row;
+}
+.signIn1 img{
+    width: 200px;
+    height: 80px;
+}
+.heading{
+    text-align: center;
+    color: #FF8600;
+    font-size: 45px;
+}
+.heading h2{
+    margin-top: -150px;
+}
+.heading h5{
+    margin-top: -60px;
+    color: green;
+}
+.azadi img{
+    height: 60px;
+    width: 150px;
+}
+.azadi{
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-left: 800px;
+}
+.satya img{
+    height: 120px;
+    width:80px;
+}
+#form{
+    margin-top: -40px;
+    border-radius: 5px;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#main img{
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:15px;
+    height:400px;
+    width:780px; 
+}
+#main p{
+    text-align: center;
+    font-size: 30px;
+    color:orange;
+}
+.Seller{
+    font-size:15px;
+    margin-top:0px;
+    
+}
+.seller img{
+    margin-top:2px;
+}
+.become a:hover{
+    border-radius:8px;
+}
+.cart{
+    padding:10px;
+}
+.Categories{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.Categories h4{
+    margin-left: 140px;
+    font-family:Arial,sans-serif;
+    font-style: italic;
+    color: #C9683E;
+}
+.Categories img{
+    height:120px;
+    width:200px;
+    margin-left: 85px;
+}
+.Categories a{
+    text-decoration:none;
+    color:#C9683E;
+    font-weight: 20px;
+   
+}
+.Categories1{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.Categories1 img{
+    height:120px;
+    width:200px;
+    margin-left: 85px;
+}
+.Categories1 h4{
+    margin-left: 100px;
+    font-family:Arial,sans-serif;
+    font-style: italic;
+    color: #C9683E;
+}
+.Categories h4:hover{
+    transition: .4s linear;
+    cursor: pointer;
+    width:80px;
+}
+.Categories1 h4:hover{
+    transition: .3s linear;
+    cursor: pointer;
+    width:89px;
+   
+}
+.Categories1 a{
+    text-decoration:none;
+    color:#C9683E;
+    font-weight: 20px;
+}
